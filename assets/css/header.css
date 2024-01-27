@@ -1,0 +1,135 @@
+body {
+    color: var(--branco);
+    font-family: 'Open Sans';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.main {
+    padding: 3rem 2rem;
+    margin: 1rem;
+    border-radius: 18px;
+    position: relative;
+    background: linear-gradient(var(--preto), var(--terceira-cor));
+}
+
+.header .header-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-principal);
+}
+
+
+.header-title {
+
+    font-family: 'Neue Machina Light';
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.header-infos {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    align-self: flex-start;
+
+}
+
+.header-infos p {
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-infos p::before {
+    display: inline-block;
+    content: ' ';
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.header-infos p.jobs::before {
+    background-image: url('../icons/job.svg');
+}
+
+.header-infos p.location::before {
+    background-image: url('../icons/location.svg');
+    margin-left: .1rem;
+    margin-right: .4rem;
+}
+
+.header-infos p.telephone::before {
+    background-image: url('../icons/telephone.svg');
+}
+
+.header-infos p.email::before {
+    background-image: url('../icons/email.svg');
+    fill: #2C74B3;
+}
+
+.style-btn-infos a {
+    text-decoration: none;
+    color: var(--branca);
+    border: var(--segunda-cor) solid 0px;
+}
+
+.style-btn-infos:hover {
+    transition: 1s;
+    border: var(--segunda-cor) solid 4px;
+    border-radius: 16px;
+    background: var(--quarta-cor);
+    filter: brightness(2);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .main {
+        margin: 2rem 8rem;
+    }
+
+    .header {
+        flex-direction: row;
+        display: grid;
+        grid-template-areas: "photo title"
+            "photo infos";
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-content: space-around;
+        text-align: start;
+    }
+
+    .header-img {
+        grid-area: photo;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 2px solid var(--cor-principal);
+    }
+
+    .header-infos {
+        grid-area: infos;
+    }
+
+    .header-title {
+        grid-area: title;
+    }
+}
+
+@media (min-width: 1440px) {
+
+}
+

@@ -1,0 +1,58 @@
+{
+  "name": "Thiago Moabi de S. Freire",
+  "photo": "https://avatars.githubusercontent.com/u/124590629?v=4",
+  "job": "Assistente admin. - Nova Jerusalém Diesel",
+  "location": "São Paulo - SP",
+  "phone": "(11) 99678-7679",
+  "whatsapp": "Mensagem via Whatsapp",
+  "email": "thiago1.000@outlook.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "css",
+        "logo": "https://raw.githubusercontent.com/Tfreire455/Aulas-Dio.me/main/5-%20portfolio-dio.me/data/Tecnologias/CSS3.png"
+      },
+      {
+        "name": "html",
+        "logo": "https://raw.githubusercontent.com/Tfreire455/Aulas-Dio.me/main/5-%20portfolio-dio.me/data/Tecnologias/HTML5.png"
+      },
+      {
+        "name": "javascript",
+        "logo": "https://raw.githubusercontent.com/Tfreire455/Aulas-Dio.me/main/5-%20portfolio-dio.me/data/Tecnologias/JAVASCRIPT.png"
+      },
+      {
+        "name": "microsoft",
+        "logo": "https://raw.githubusercontent.com/Tfreire455/Aulas-Dio.me/main/5-%20portfolio-dio.me/data/Tecnologias/VSCODE.png"
+      }
+    ],
+    "softSkills": [
+      "Empatia",
+      "Liderança",
+      "Trabalho em equipe",
+      "Flexibilidade",
+      "Organização"
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (básico/Técnico)"
+  ],
+  "portfolio": [
+    {
+      "name": "Feito na Alura para a criação de um site responsivo.",
+      "url": "https://tfreire455.github.io/Alurabook-responsivo/",
+      "github": true
+    },
+    {
+      "name": "Curso feito na DIO, usando javascript para a criação de uma pokedex.",
+      "url": "https://tfreire455.github.io/Pokedex-index.html",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Assistente administrativo / Nova Jerusalém Diesel",
+      "period": "2022 - até o momento"
+    }
+  ]
+}

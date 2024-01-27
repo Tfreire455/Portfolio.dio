@@ -1,0 +1,20 @@
+:root {
+    --cor-principal: #2C74B3;
+    --segunda-cor: #205295;
+    --terceira-cor: #144272;
+    --quarta-cor: #0A2647;
+    --branco: #fff;
+    --preto: #000;
+    --cor-escura: #1d1d1d;
+    --azul-escuro: #090f14
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    color: var(--branco)
+}

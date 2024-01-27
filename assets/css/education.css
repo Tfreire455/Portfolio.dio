@@ -1,0 +1,13 @@
+.img-carousel {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 16px;
+
+}
+
+
+.content .education {
+    padding: 8px
+}
