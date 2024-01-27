@@ -48,6 +48,14 @@
   }
 }
 
+@media (min-width: 768px) {
+
+  .bgAnimation {
+    height: 300%;
+  }
+  
+}
+
 @media (min-width: 1280px) {
 
   .bgAnimation {
