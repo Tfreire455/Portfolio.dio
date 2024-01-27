@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 2500%;
+  height: 250%;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(20, 1fr);
