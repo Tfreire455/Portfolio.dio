@@ -47,6 +47,16 @@
       "name": "Curso feito na DIO, usando javascript para a criação de uma pokedex.",
       "url": "https://tfreire455.github.io/Pokedex-index.html",
       "github": true
+    },
+    {
+      "name": "Jogo da velha",
+      "url": "https://tfreire455.github.io/jogo-da-velha/",
+      "github": true
+    },
+    {
+      "name": "Adivinhe o número",
+      "url": "https://tfreire455.github.io/Adivinha-numero/",
+      "github": true
     }
   ],
   "professionalExperience": [
