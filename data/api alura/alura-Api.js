@@ -13,6 +13,6 @@ async function fetchApiAlura() {
 function nameCourses(updateCoursesLoading) {
     const nameCourse = document.getElementById("courseProgresses.name");
     nameCourse.innerHTML = updateCoursesLoading.name.map(
-        (course) => `<li>${course.name}</li>`
+        (course) => `<li>${course}</li>`
         );
 }
