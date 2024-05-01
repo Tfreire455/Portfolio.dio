@@ -4,28 +4,29 @@
 }
 
 .skills {
-    margin: .5rem;
-    margin-left: 2px;
+    margin: 0rem;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .skill-title {
+    font-size: 1rem;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 1.2rem;
 }
 
 .skList {
     list-style: none;
-    padding: 2px;
+    padding: 0px;
 }
 
 .skList li img {
     width: 40px;
-    margin: .3rem;
+    margin: 0rem;
 }
 
 .professional-skills {
@@ -53,7 +54,7 @@
     margin-top: .5rem;
     padding-bottom: 2px;
     text-align: start;
-    font-size: .85rem;
+    font-size: .5rem;
 
 }
 

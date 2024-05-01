@@ -22,15 +22,16 @@
 .acordeon .trigger {
     display: flex;
     flex-direction: row;
-    font-size: 1.7rem;
-    padding: 1rem 2rem;
+    font-size: 1rem;
+    padding: 1rem 0rem;
     background-color: var(--terceira-cor);
     border-radius: 1rem;
     outline: none;
     color: var(--branco);
     border: none;
     font-weight: 700;
-    justify-content: space-between;
+    gap: 12px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -40,9 +41,9 @@
 
 .acordeon .trigger::after {
     content: '';
-    margin-top: 8px;
-    width: 1.5rem;
-    height: 1.5rem;
+    margin-top: 2px;
+    width: 10px;
+    height: 10px;
     display: inline-block;
     background-image: url('../icons/seta\ para\ cima.svg');
     background-repeat: no-repeat;
