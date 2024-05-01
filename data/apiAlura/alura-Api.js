@@ -5,12 +5,38 @@ async function fetchApiAlura() {
   return await buscando.json();
 }
 
-function nameCourses(updateCoursesLoading) {
-  const nameCourse = document.getElementById("courseProgresses.name");
-  nameCourse.innerHTML = updateCoursesLoading.name.map(course => `<li>${course}</li>`);
+function nameCourses(courseProgresses) {
+  const courseList = document.getElementById("courseProgresses-name");
+  courseList.innerHTML = ""; // Limpa o conteúdo anterior
+  // Percorre os cursos
+  courseProgresses.forEach((course) => {
+    // Cria um elemento <li> para cada curso
+    const list = document.createElement("li");
+    // Adiciona a classe "course-item-name" ao elemento <li>
+    list.classList.add("course-item-name");
+    // Adiciona o nome do curso ao elemento <li>
+    list.textContent = course.name;
+    // Adiciona o elemento <li> como filho do elemento <ul>
+    courseList.appendChild(list);
+
+    const btn = document.createElement("button");
+    btn.classList.add("btn");
+    btn.textContent = "Ver progresso";
+    courseList.appendChild(btn);
+    btn.addEventListener("click", () => {
+      let div = document.querySelector('.alura-courses-progress');
+      div.innerHTML = `
+      <p class="progress-course">${course.name}</p>
+      <p class="progress-title">Progresso:</p>
+      <progress class="progress-bar" value="${course.progress}" max="100"></progress>
+      <p class="progress-percent">${course.progress}%</p>`;
+    });
+  });
 }
 
 (async () => {
+  // Chama a função fetchApiAlura() e espera a resposta
   const updateCoursesLoading = await fetchApiAlura();
-  nameCourses(updateCoursesLoading);
+  // Chama a função nameCourses() e passa a lista de cursos como parâmetro
+  nameCourses(updateCoursesLoading.courseProgresses);
 })();

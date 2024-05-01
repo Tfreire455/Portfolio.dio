@@ -37,7 +37,8 @@
     <link rel="stylesheet" href="./assets/css/portfolio.css" />
     <link rel="stylesheet" href="./assets/css/skills.css" />
     <link rel="stylesheet" href="./assets/css/education.css" />
-
+    <link rel="stylesheet" href="assets/css/aluraCursos.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
     <!--Fonte-->
     <link
       href="https://db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina+Regular"
@@ -131,15 +132,18 @@
         <section class="acordeon open">
           <button class="trigger" type="button">
             <span class="title"> Cursos Alura </span>
-            </button>
+          </button>
 
-            <div class="content">
-              <ul class="alura-courses" id="courseProgresses.name">Carregando...</ul>
+          <div class="content">
+            <ul class="alura-courses" id="courseProgresses-name">
+              Carregando...
+            </ul>
+            <div class="alura-courses-progress">
+              
             </div>
-
+          </div>
         </section>
       </section>
-
 
       <section class="secoes">
         <!--Estudo-->
@@ -157,7 +161,10 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <title>Placeholder</title>
-                  <img class="img-carousel" src="./assets/Foto certificado/1.png"/>
+                  <img
+                    class="img-carousel"
+                    src="./assets/Foto certificado/1.png"
+                  />
                 </div>
               </div>
               <button
@@ -188,7 +195,7 @@
           </div>
         </section>
       </section>
-      
+
       <section class="secoes">
         <!--Portfolio-->
         <section class="acordeon open">
@@ -229,14 +236,14 @@
         </section>
       </section>
     </main>
-    <script src="./api alura/alura-Api.js"></script>
-    <script src="./data/api.js"></script>
-    <script src="./data/profile-header.js"></script>
+    <script src="./data/apiAlura/alura-Api.js"></script>
+    <script src="./data/apiProfile/api.js"></script>
+    <script src="./data/apiProfile/profile-header.js"></script>
     <script src="./js/acordeon.js"></script>
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
     ></script>
     <script src="./js/courses-img.js"></script>
   </body>

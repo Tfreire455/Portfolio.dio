@@ -101,7 +101,7 @@
 }
 
 .acordeon.open .content {
-    padding: 2rem;
+    padding: 1rem .5rem;
 }
 
 .acordeon.open .content {
